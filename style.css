@@ -1,0 +1,21 @@
+/* Fond de la page et de la navbar */
+body, .navbar {
+  background-color: rgb(250, 249, 246) !important;
+}
+
+/* Couleur des liens de la navbar */
+.navbar .nav-link {
+  transition: all 0.3s ease;
+  border-radius: 4rem;
+  padding: 0.5rem 1rem;
+  color: rgb(0, 80, 148) !important;
+  font-size: 1.3rem; /* ↑ taille un peu plus grande */
+}
+
+
+/* Effet au survol des liens de la navbar */
+.navbar .nav-link:hover {
+  background-color: rgba(0, 83, 150, 1);
+  color: #fff !important;
+  transform: scale(1.05);
+}

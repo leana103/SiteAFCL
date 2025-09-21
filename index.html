@@ -9,15 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg" id="mainNav">
   <div class="container">
-    <!-- Logo -->
     <a class="navbar-brand d-flex align-items-center" href="#">
       <img src="images/logoacf2loff.png" alt="ACFL" width="100" class="me-2">
     </a>
@@ -27,15 +25,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Liens -->
     <div class="collapse navbar-collapse justify-content-center" id="mainNavContent">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link px-3 text-primary fw-normal" href="#accueil">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link px-3 text-primary fw-normal" href="#activites">Nos activités</a></li>
-        <li class="nav-item"><a class="nav-link px-3 text-primary fw-normal" href="#ulm">Nos ULM</a></li>
-        <li class="nav-item"><a class="nav-link px-3 text-primary fw-normal" href="#pedagogie">Moyens pédagogiques</a></li>
-        <li class="nav-item"><a class="nav-link px-3 text-primary fw-normal" href="#galerie">Galerie</a></li>
-        <li class="nav-item"><a class="nav-link px-3 text-primary fw-normal" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link px-3 text-primary" href="#accueil">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link px-3 text-primary" href="#activites">Nos activités</a></li>
+        <li class="nav-item"><a class="nav-link px-3 text-primary" href="#ulm">Nos ULM</a></li>
+        <li class="nav-item"><a class="nav-link px-3 text-primary" href="#pedagogie">Moyens pédagogiques</a></li>
+        <li class="nav-item"><a class="nav-link px-3 text-primary" href="#galerie">Galerie</a></li>
+        <li class="nav-item"><a class="nav-link px-3 text-primary" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -50,7 +47,7 @@
 </div>
 
 <!-- À PROPOS -->
-<section class="py-5" >
+<section class="py-5">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 text-center mb-4 mb-lg-0">
@@ -97,128 +94,146 @@
 
   <div class="row text-center">
     <div class="col-md-4 mb-4">
-      <a href="#hotellerie">
-        <img src="images/hotel.png" alt="Service d'Hôtellerie" class="img-fluid activity-image mb-3">
-      </a>
-      <h4 id="hotellerie" class="text-primary">Service d'Hôtellerie</h4>
+      <img src="images/hotel.png" alt="Service d'Hôtellerie" class="img-fluid activity-image mb-3">
+      <h4 class="text-primary">Service d'Hôtellerie</h4>
       <p>Nous proposons trois studios et six chambres pour les stagiaires.</p>
     </div>
     <div class="col-md-4 mb-4">
-      <a href="#restauration">
-        <img src="images/restaurant.png" alt="Service de Restauration" class="img-fluid activity-image mb-3">
-      </a>
-      <h4 id="restauration" class="text-primary">Service de Restauration</h4>
+      <img src="images/restaurant.png" alt="Service de Restauration" class="img-fluid activity-image mb-3">
+      <h4 class="text-primary">Service de Restauration</h4>
       <p>Profitez de notre service de restauration rapide sur place.</p>
     </div>
     <div class="col-md-4 mb-4">
-      <a href="#cours-vol">
-        <img src="images/formation vol.png" alt="Cours de Vol" class="img-fluid activity-image mb-3">
-      </a>
-      <h4 id="cours-vol" class="text-primary">Cours de Vol</h4>
+      <img src="images/formation vol.png" alt="Cours de Vol" class="img-fluid activity-image mb-3">
+      <h4 class="text-primary">Cours de Vol</h4>
       <p>Apprenez à piloter avec nos instructeurs expérimentés.</p>
     </div>
   </div>
 </section>
 
-  <div class="container py-5">
-  <h2 class="mb-4">
-    Nos <span class="text-primary">ULM</span>
-  </h2>
+<!-- NOS ULM -->
+<section id="ulm" class="py-5">
+  <div class="container">
+    <h2 class="text-primary mb-4">Nos ULM</h2>
 
-  <!-- Carousel -->
-  <div id="ulmCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
+    <div id="ulmCarousel" class="carousel slide" data-bs-ride="carousel">
 
-      <!-- Page 1 -->
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="pendulaire.jpg" class="card-img-top" alt="ULM pendulaire">
-              <div class="card-body">
-                <h5 class="card-title text-primary">Le pendulaire</h5>
-                <p class="card-text">
-                  ULM composé d’une aile delta souple et d’un chariot motorisé. Léger, maniable et ouvert sur l’extérieur, il offre des sensations de liberté uniques, idéales pour découvrir le vol en toute simplicité.
-                </p>
+      <!-- Indicateurs -->
+      <div class="carousel-indicators mb-4">
+        <button type="button" data-bs-target="#ulmCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#ulmCarousel" data-bs-slide-to="1"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <!-- Page 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/pendulaire.jpg" class="card-img-top" alt="ULM pendulaire">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">Le pendulaire</h5>
+                  <p class="card-text">ULM composé d’une aile delta souple et d’un chariot motorisé. Léger, maniable et ouvert sur l’extérieur, il offre des sensations de liberté uniques.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="autogire.jpg" class="card-img-top" alt="Autogire">
-              <div class="card-body">
-                <h5 class="card-title text-primary">L’autogire</h5>
-                <p class="card-text">
-                  Doté d’un rotor libre, l’autogire combine la sécurité d’un avion et la maniabilité d’un hélicoptère. Stable et sûr, il permet des vols doux tout en offrant une visibilité exceptionnelle, pour une expérience aérienne originale et agréable.
-                </p>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/autogire.jpg" class="card-img-top" alt="Autogire">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">L’autogire</h5>
+                  <p class="card-text">Doté d’un rotor libre, l’autogire combine la sécurité d’un avion et la maniabilité d’un hélicoptère. Stable et sûr, il offre une visibilité exceptionnelle.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="multiaxes.jpg" class="card-img-top" alt="Multiaxes">
-              <div class="card-body">
-                <h5 class="card-title text-primary">Le multiaxes</h5>
-                <p class="card-text">
-                  Ressemblant à un petit avion avec cabine fermée et commandes classiques, ce multiaxes offre confort et stabilité. Idéal pour les balades aériennes ou les vols d’initiation, il permet de profiter pleinement des sensations de vol en toute sécurité.
-                </p>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/multiaxes.jpg" class="card-img-top" alt="Multiaxes">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">Le multiaxes</h5>
+                  <p class="card-text">Ressemblant à un petit avion avec cabine fermée, ce multiaxes offre confort et stabilité pour profiter pleinement du vol en toute sécurité.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Page 2 -->
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="paramoteur.jpg" class="card-img-top" alt="Paramoteur">
-              <div class="card-body">
-                <h5 class="card-title text-primary">Le paramoteur</h5>
-                <p class="card-text">
-                  Combinant un parapente et un moteur léger sur le dos du pilote, cet ULM est facile à manœuvrer. Il permet de s’élever rapidement et de profiter d’une grande liberté dans les airs, offrant une expérience de vol unique et accessible à tous.
-                </p>
+        <!-- Page 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/paramoteur.jpg" class="card-img-top" alt="Paramoteur">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">Le paramoteur</h5>
+                  <p class="card-text">Combinant un parapente et un moteur léger, il permet de s’élever rapidement et de profiter d’une grande liberté dans les airs.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="helicoptere.jpg" class="card-img-top" alt="Hélicoptère">
-              <div class="card-body">
-                <h5 class="card-title text-primary">L’hélicoptère</h5>
-                <p class="card-text">
-                  Avec ses rotors principaux et de queue, cet hélicoptère offre une grande maniabilité et permet des vols stationnaires ou des déplacements précis. Idéal pour découvrir le pilotage vertical et profiter de vues panoramiques uniques, il combine sensations fortes et contrôle sécurisé.
-                </p>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/helicoptère.jpg" class="card-img-top" alt="Hélicoptère">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">L’hélicoptère</h5>
+                  <p class="card-text">Grâce à ses rotors, il offre une grande maniabilité, permet des vols stationnaires et des déplacements précis.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="aerostat.jpg" class="card-img-top" alt="Aérostat">
-              <div class="card-body">
-                <h5 class="card-title text-primary">L’aérostat</h5>
-                <p class="card-text">
-                  L’aérostat, ou montgolfière, utilise l’air chaud pour s’élever doucement dans les airs. Stable et paisible, il permet d’admirer les paysages depuis le ciel et de vivre une expérience de vol tranquille et accessible à tous.
-                </p>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/aerostat.jpg" class="card-img-top" alt="Aérostat">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">L’aérostat</h5>
+                  <p class="card-text">Stable et paisible, l’aérostat (montgolfière) permet d’admirer les paysages depuis le ciel dans une ambiance tranquille.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
+
+      <!-- Contrôles -->
+      <button class="carousel-control-prev custom-carousel-control" type="button" data-bs-target="#ulmCarousel" data-bs-slide="prev">
+        <i class="bi bi-chevron-left custom-carousel-icon"></i>
+      </button>
+      <button class="carousel-control-next custom-carousel-control" type="button" data-bs-target="#ulmCarousel" data-bs-slide="next">
+        <i class="bi bi-chevron-right custom-carousel-icon"></i>
+      </button>
 
     </div>
-
-    <!-- Flèches -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#ulmCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#ulmCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
   </div>
-</div>
+</section>
 
+<!-- MOYENS PÉDAGOGIQUES -->
+<section id="pedagogie" class="py-5">
+  <div class="container">
+    <h2 class="text-primary mb-4">Moyens pédagogiques</h2>
+    <p class="mb-4">
+      Notre aérodrome privé bénéficie d’un environnement exceptionnel, avec la possibilité d’un hébergement sur place.
+    </p>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <ul class="list-unstyled">
+          <li><i class="bi bi-check-circle-fill text-primary"></i><span>Une surface totale de <strong>45 hectares</strong> dégagés.</span></li>
+          <li><i class="bi bi-check-circle-fill text-primary"></i><span>Deux pistes en X de <strong>800 m</strong> et <strong>450 m</strong>.</span></li>
+          <li><i class="bi bi-check-circle-fill text-primary"></i><span>Une hydrosurface de <strong>8 hectares</strong>.</span></li>
+          <li><i class="bi bi-check-circle-fill text-primary"></i><span>Trois hangars offrant une surface couverte de <strong>4300 m²</strong>.</span></li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <ul class="list-unstyled">
+          <li><i class="bi bi-check-circle-fill text-primary"></i><span>Des locaux administratifs informatisés pour une gestion efficace.</span></li>
+          <li><i class="bi bi-check-circle-fill text-primary"></i><span>Une salle de cours multimédia équipée d’un simulateur de vol.</span></li>
+          <li><i class="bi bi-check-circle-fill text-primary"></i><span>Un atelier d’entretien et de réparation pour tous les aéronefs.</span></li>
+          <li><i class="bi bi-check-circle-fill text-primary"></i><span>Des capacités d’accueil et de restauration sur place.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- CONTACT -->
 <section id="contact" class="py-5 text-white" style="background-color: rgb(0,82,150);">
@@ -251,9 +266,7 @@
           </div>
 
           <div class="text-center">
-            <button type="submit" class="btn btn-light fw-bold px-4" style="color: rgb(0,82,150);">
-              Envoyer
-            </button>
+            <button type="submit" class="btn btn-light fw-bold px-4" style="color: rgb(0,82,150);">Envoyer</button>
           </div>
         </form>
       </div>
@@ -290,4 +303,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

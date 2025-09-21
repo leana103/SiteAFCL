@@ -1,21 +1,68 @@
-/* Fond de la page et de la navbar */
-body, .navbar {
-  background-color: rgb(250, 249, 246) !important;
+/* Fond général */
+body {
+  background-color: rgb(249, 247, 243);
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
 
-/* Couleur des liens de la navbar */
+/* Navbar */
+.navbar {
+  background-color: rgb(249, 247, 243);
+}
+
+/* Liens de la navbar */
 .navbar .nav-link {
-  transition: all 0.3s ease;
-  border-radius: 4rem;
+  color: rgb(0, 82, 150);   /* Bleu exact */
+  font-size: 1.3rem;
   padding: 0.5rem 1rem;
-  color: rgb(0, 80, 148) !important;
-  font-size: 1.3rem; /* ↑ taille un peu plus grande */
+  border-radius: 4rem;
+  transition: all 0.3s ease;
 }
 
+/* Forcer couleur même avec text-primary */
+.navbar .nav-link.text-primary {
+  color: rgb(0, 82, 150) !important;
+}
 
 /* Effet au survol des liens de la navbar */
 .navbar .nav-link:hover {
-  background-color: rgba(0, 83, 150, 1);
-  color: #fff !important;
+  color: #fff !important;              /* Texte blanc au survol */
+  background-color: rgb(0, 82, 150);   /* Même bleu au survol */
   transform: scale(1.05);
+}
+
+/* Titres de la section Activités */
+#activites h2,
+#activites h4 {
+  color: rgb(0, 82, 150);
+}
+
+/* Forcer couleur si text-primary présent */
+#activites h2.text-primary,
+#activites h4.text-primary {
+  color: rgb(0, 82, 150) !important;
+}
+
+/* Header avec image */
+.header {
+  background: url('images/ciel.jpg') center/cover no-repeat;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+/* Images d'activité */
+.activity-image {
+  max-height: 150px;
+  width: auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #212529; /* bg-dark */
 }

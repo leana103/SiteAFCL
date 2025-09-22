@@ -2,7 +2,7 @@
 /* Couleurs globales */
 /* ------------------------------- */
 .text-primary {
-  color: rgb(0, 82, 150) !important; /* bleu ACFL partout */
+  color: rgb(0, 82, 150) !important;
 }
 
 /* ------------------------------- */
@@ -62,7 +62,6 @@ body {
   text-align: center;
 }
 
-/* Images d'activité */
 .activity-image {
   max-height: 150px;
   width: auto;
@@ -72,21 +71,19 @@ body {
 /* Section Nos ULM */
 /* ------------------------------- */
 #ulm {
-  background-color: rgb(249, 247, 243); /* fond crème */
+  background-color: rgb(249, 247, 243); 
 }
 
 #ulm h2,
 #ulm h5 {
-  color: rgb(0, 82, 150) !important; /* titres bleus */
+  color: rgb(0, 82, 150) !important; 
 }
 
-/* Supprime les flèches blanches par défaut de Bootstrap */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-image: none !important;
 }
 
-/* Flèches personnalisées - uniquement pour #ulmCarousel */
 #ulmCarousel .custom-carousel-control {
   position: absolute;
   top: 50%;
@@ -117,7 +114,6 @@ body {
   line-height: 1;
 }
 
-/* Responsive flèches */
 @media (max-width: 576px) {
   #ulmCarousel .custom-carousel-control {
     width: 2.8rem;
@@ -128,7 +124,6 @@ body {
   #ulmCarousel .custom-carousel-icon { font-size: 1rem; }
 }
 
-/* Indicateurs (dots) du carousel */
 #ulmCarousel .carousel-indicators {
   position: relative;
   bottom: 0;
@@ -156,7 +151,7 @@ body {
 /* Section Moyens pédagogiques */
 /* ------------------------------- */
 #pedagogie {
-  background-color: rgb(249, 247, 243); /* fond crème */
+  background-color: rgb(249, 247, 243);
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -165,23 +160,20 @@ body {
   color: rgb(0, 82, 150) !important;
 }
 
-/* chaque li est un flex avec gap contrôlé (icône + texte) */
 #pedagogie ul li {
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;             /* espace entre icône et texte */
+  gap: 0.75rem;             
   font-size: 1.05rem;
   line-height: 1.6;
 }
 
-/* icône de coche */
 #pedagogie i.bi {
   font-size: 1.25rem;
   color: rgb(0, 82, 150) !important;
-  margin-top: 0.2rem; /* aligne visuellement l'icône avec le texte */
+  margin-top: 0.2rem; 
 }
 
-/* adoucir le <strong> sans couper les espaces */
 #pedagogie strong {
   font-weight: 600;
   color: #000;
@@ -191,17 +183,15 @@ body {
 /* Section Galerie */
 /* ------------------------------- */
 #galerie h2 {
-  color: rgb(0, 82, 150) !important; /* titre principal bleu */
+  color: rgb(0, 82, 150) !important; 
 }
 
-/* Légendes du carousel : blanc lisible */
 #galerie .carousel-caption h5,
 #galerie .carousel-caption p {
   color: #fff !important;
   text-shadow: 0 2px 6px rgba(0,0,0,0.65);
 }
 
-/* Flèches personnalisées - Galerie */
 #carouselGalerie .custom-carousel-control {
   position: absolute;
   top: 50%;
@@ -232,7 +222,6 @@ body {
   line-height: 1;
 }
 
-/* Responsive flèches */
 @media (max-width: 576px) {
   #carouselGalerie .custom-carousel-control {
     width: 2.8rem;
@@ -243,7 +232,6 @@ body {
   #carouselGalerie .custom-carousel-icon { font-size: 1rem; }
 }
 
-/* Indicateurs (dots) du carousel */
 #carouselGalerie .carousel-indicators {
   position: relative;
   bottom: 0;

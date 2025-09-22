@@ -187,6 +187,85 @@ body {
   color: #000;
 }
 
+/* ------------------------------- */
+/* Section Galerie */
+/* ------------------------------- */
+#galerie h2 {
+  color: rgb(0, 82, 150) !important; /* titre principal bleu */
+}
+
+/* Légendes du carousel : blanc lisible */
+#galerie .carousel-caption h5,
+#galerie .carousel-caption p {
+  color: #fff !important;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.65);
+}
+
+/* Flèches personnalisées - Galerie */
+#carouselGalerie .custom-carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  background-color: rgb(0, 82, 150);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  z-index: 5;
+}
+
+#carouselGalerie .carousel-control-prev.custom-carousel-control {
+  left: -1.6rem;
+}
+
+#carouselGalerie .carousel-control-next.custom-carousel-control {
+  right: -1.6rem;
+}
+
+#carouselGalerie .custom-carousel-icon {
+  font-size: 1.3rem;
+  color: #ffffff;
+  line-height: 1;
+}
+
+/* Responsive flèches */
+@media (max-width: 576px) {
+  #carouselGalerie .custom-carousel-control {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  #carouselGalerie .carousel-control-prev.custom-carousel-control { left: 0.4rem; }
+  #carouselGalerie .carousel-control-next.custom-carousel-control { right: 0.4rem; }
+  #carouselGalerie .custom-carousel-icon { font-size: 1rem; }
+}
+
+/* Indicateurs (dots) du carousel */
+#carouselGalerie .carousel-indicators {
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+}
+
+#carouselGalerie .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(0, 82, 150);
+  opacity: 0.5;
+  transition: all 0.25s ease;
+  border: none;
+  margin: 0 6px;
+}
+
+#carouselGalerie .carousel-indicators .active {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
 
 /* ------------------------------- */
 /* Footer */
